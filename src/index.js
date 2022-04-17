@@ -14,10 +14,7 @@ import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import Ma from "./Components/Ma";
-// import React, { Component } from 'react';
 import { HashRouter,Link } from "react-router-dom";
-// import Start from "./Components/Start";
-// import Home from "./Components/Home";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <BrowserRouter>
@@ -25,14 +22,14 @@ root.render(
 
   <App/>
   <Routes>
-    <Route path="/" element={<App/>} />  
+    <Route path="/" element={<Home/>} />  
       <Route path="/Home" element={<Home/>} />  
       <Route path="/Ma" element={<Ma/>} />  
       <Route path="/Nav" element={<Nav/>} /> 
       <Route path="/About" element={<About/>} /> 
       <Route path="/Contact" element={<Contact/>} /> 
   </Routes>
-  </HashRouter>
+   </HashRouter> 
 
   
 // </BrowserRouter>,

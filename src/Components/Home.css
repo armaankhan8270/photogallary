@@ -34,7 +34,7 @@ background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, F
     /*margin-left: left 50%;
     */margin-top:  10%;
     padding: auto;
-    height: 400px;
+    height: 600px;
     width: 800px;
     background-image: url('123.jpg');
     background-size: cover;
@@ -43,5 +43,21 @@ background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, F
     background-repeat: no-repeat;
     /*width: 100%;
     */border-radius:30% ;}
+
+    .home-btn{
+        background: #f9f9f9;/* background: #000; */
+        background: #FC466B;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+        color: rgb(0, 0, 0);
+    border-radius: 200px;
+    height: inherit;
+    width: inherit;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 40px;
+    border: 4px solid rgb(249, 249, 249);
+padding:10px}
     
     

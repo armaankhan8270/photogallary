@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import SendIcon from '@mui/icons-material/Send';
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -17,7 +19,12 @@ const Home = () => {
             inus voluptate at, asperiores repellat
             
           </p>
-        <div className="btndd"><button className=" fs- btn-primary"> <a href="/Nav"></a>Get Started </button></div>
+        <div className=""><button
+                className="display-1 border-rounded text-center home-btn text-end   fw-bolder"
+              >
+                <Link className="text-light"   to="/Nav">Start <SendIcon style={{ color: "black", fontSize: "75px" }}/></Link>
+                {/* Start <SendIcon style={{ color: "black", fontSize: "75px" }}/> */}
+              </button></div>
         </div>
         <div className="img1">
           
