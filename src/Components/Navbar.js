@@ -1,57 +1,49 @@
-import React from 'react'
-import './Navbar.css'
-
-import HomeIcon from '@mui/icons-material/Home';
-import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
-import ContactsIcon from '@mui/icons-material/Contacts';
-import InfoIcon from '@mui/icons-material/Info';
-import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
-import { Link } from 'react-router-dom'
-import Avatar from '@mui/material/Avatar'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
+      <nav class="bg-white shadow-md m-3 h-16 dark:bg-gray-800">
+        <div class="text-black flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+          <Link
+            to="/Nav"
+            class="text-black transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
+          >
+            home
+          </Link>
 
-        <div className="mnavs">
-    <nav className="navbar bgnav navbar-expand-lg  rounded-pill   navbar-light ">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <Link class="navbar-brand fs-1 fw-bold" to="/Nav"><AddAPhotoIcon style={{ color: "black", fontSize: "55px" }}/>PHOTOHUB </Link>
-      <ul class="navbar-nav naval me-auto mb-2 mb-lg-0">
-        
-        <li class="  my-mar nav-item">
-          <Link class="nav-link fs-4 font-monospace active" to="/Home"><HomeIcon style={{ color: "black", fontSize: "55px" }}/>Home</Link>
-        </li>
-        <li class=" nav-item">
-          <Link class="nav-link fs-4 font-monospace active" to="/Contact"> <ContactsIcon style={{ color: "black", fontSize: "55px" }}/>Contact</Link>
-        </li>
-        <li class=" nav-item">
-          <Link class="nav-link fs-4 font-monospace active" to="/About"><InfoIcon style={{ color: "black", fontSize: "55px" }}/>About</Link>
-        </li>
-        <li class=" nav-item">
-          <Link class="nav-link fs-4  fst-italic active" to="/Ma"><PlayCircleFilledIcon style={{ color: "black", fontSize: "55px" }}/>Start</Link>
-        </li>
-        <li class=" nav-item">
-        </li>
-        <li class=" nav-item ">
-        </li>
-      </ul>
-      
+          <Link
+            to="/Ma"
+            class="border-b-2 border-transparent hover:text-black transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          >
+            Photo
+          </Link>
+
+          <Link
+            to="/Contact"
+            class="border-b-2 border-transparent hover:text-black transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          >
+            Contact
+          </Link>
+
+          <Link
+            to="/About"
+            class="border-b-2 border-transparent hover:text-black transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          >
+            About
+          </Link>
+
+          <Link
+            to="/Rec"
+            class="border-b-2 border-transparent hover:text-black transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          >
+            recipe
+          </Link>
+        </div>
+      </nav>
     </div>
-  </div>
-</nav>
- 
+  );
+};
 
-
-    </div>
-
-  
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbar;
